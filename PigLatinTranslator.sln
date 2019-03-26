@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleUI", "ConsoleUI\Cons
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TranslateLib", "TranslateLib\TranslateLib.csproj", "{5253CD42-98C7-49C6-9682-ABC6417DCF0A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TranslateLib.Tests", "TranslateLib.Tests\TranslateLib.Tests.csproj", "{8484A4F3-8109-49E6-B43D-B099EA6BB656}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TranslateLib.Tests", "TranslateLib.Tests\TranslateLib.Tests.csproj", "{E41D4C08-0B0C-47A7-8E62-842AAB6CCB33}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +23,10 @@ Global
 		{5253CD42-98C7-49C6-9682-ABC6417DCF0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5253CD42-98C7-49C6-9682-ABC6417DCF0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5253CD42-98C7-49C6-9682-ABC6417DCF0A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8484A4F3-8109-49E6-B43D-B099EA6BB656}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8484A4F3-8109-49E6-B43D-B099EA6BB656}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8484A4F3-8109-49E6-B43D-B099EA6BB656}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8484A4F3-8109-49E6-B43D-B099EA6BB656}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E41D4C08-0B0C-47A7-8E62-842AAB6CCB33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E41D4C08-0B0C-47A7-8E62-842AAB6CCB33}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E41D4C08-0B0C-47A7-8E62-842AAB6CCB33}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E41D4C08-0B0C-47A7-8E62-842AAB6CCB33}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
