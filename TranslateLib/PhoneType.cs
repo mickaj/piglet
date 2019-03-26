@@ -3,6 +3,7 @@
     public enum PhoneType
     {
         Vowel,
-        Consonant
+        Consonant,
+        Unspecified
     }
 }
