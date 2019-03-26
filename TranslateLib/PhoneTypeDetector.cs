@@ -4,7 +4,7 @@ using System.Text;
 
 namespace TranslateLib
 {
-    public class PhoneTypeDetector
+    public class PhoneTypeDetector : IPhoneTypeDetector
     {
         private List<char> vowels = new List<char> { 'a', 'e', 'i', 'o', 'u', 'y' };
         private List<char> consonants = new List<char> { 'b', 'c', 'd', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'p', 'q', 'r', 's', 't', 'v', 'w', 'x', 'z' };
