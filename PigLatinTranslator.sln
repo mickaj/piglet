@@ -5,6 +5,10 @@ VisualStudioVersion = 15.0.28307.489
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleUI", "ConsoleUI\ConsoleUI.csproj", "{8D696FF1-8D82-4258-B781-01FEDEC32FCC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TranslateLib", "TranslateLib\TranslateLib.csproj", "{5253CD42-98C7-49C6-9682-ABC6417DCF0A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TranslateLib.Tests", "TranslateLib.Tests\TranslateLib.Tests.csproj", "{8484A4F3-8109-49E6-B43D-B099EA6BB656}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{8D696FF1-8D82-4258-B781-01FEDEC32FCC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8D696FF1-8D82-4258-B781-01FEDEC32FCC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8D696FF1-8D82-4258-B781-01FEDEC32FCC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5253CD42-98C7-49C6-9682-ABC6417DCF0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5253CD42-98C7-49C6-9682-ABC6417DCF0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5253CD42-98C7-49C6-9682-ABC6417DCF0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5253CD42-98C7-49C6-9682-ABC6417DCF0A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8484A4F3-8109-49E6-B43D-B099EA6BB656}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8484A4F3-8109-49E6-B43D-B099EA6BB656}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8484A4F3-8109-49E6-B43D-B099EA6BB656}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8484A4F3-8109-49E6-B43D-B099EA6BB656}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
