@@ -44,6 +44,14 @@ namespace TranslateLib.Tests
         string eagle = "eagle";
         string eagleTranslated = "eagleyay";
 
+        Dictionary<string, string> translatedSentences = new Dictionary<string, string>();
+
+        string wafflesSentence = "I like to eat honey waffles.";
+        string wafflesSentenceTranslated = "Iyay ikelay otay eatyay oneyhay afflesway.";
+
+        string rainSentence = "Do you think it is going to rain today?";
+        string rainSentenceTranslated = "Oday youyay inkthay ityay isyay oinggay otay ainray odaytay?";
+
         public TranslatorTests()
         {
             detector = new PhoneTypeDetector();
@@ -60,6 +68,9 @@ namespace TranslateLib.Tests
             translatedVowelWords.Add(apple, appleTranslated);
             translatedVowelWords.Add(oaken, oakenTranslated);
             translatedVowelWords.Add(eagle, eagleTranslated);
+
+            translatedSentences.Add(wafflesSentence, wafflesSentenceTranslated);
+            translatedSentences.Add(rainSentence, rainSentenceTranslated);
         }
 
         [Fact]
@@ -76,9 +87,19 @@ namespace TranslateLib.Tests
         public void TestConsonantWords()
         {
             Dictionary<string, string> result = TranslateWords(translatedConsonantWords);
-            foreach (KeyValuePair<string, string> pair in result)
+            foreach(KeyValuePair<string, string> pair in result)
             {
                 Assert.Equal(translatedConsonantWords[pair.Key], pair.Value);
+            }
+        }
+
+        [Fact]
+        public void TestSentences()
+        {
+            Dictionary<string, string> result = TranslateSentences(translatedSentences);
+            foreach(KeyValuePair<string, string> pair in result)
+            {
+                Assert.Equal(translatedSentences[pair.Key], pair.Value);
             }
         }
 
@@ -88,6 +109,16 @@ namespace TranslateLib.Tests
             foreach(KeyValuePair<string, string> pair in baseDict)
             {
                 result.Add(pair.Key, translator.TranslateWord(pair.Key));
+            }
+            return result;
+        }
+
+        private Dictionary<string, string> TranslateSentences(Dictionary<string, string> baseDict)
+        {
+            Dictionary<string, string> result = new Dictionary<string, string>();
+            foreach(KeyValuePair<string,string> pair in baseDict)
+            {
+                result.Add(pair.Key, translator.Translate(pair.Key));
             }
             return result;
         }

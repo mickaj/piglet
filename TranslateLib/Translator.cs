@@ -9,6 +9,7 @@ namespace TranslateLib
     {
         private const string WORD_PATTERN = "[a-zA-Z]+";
         private const string SINGLE_WORD_PATTERN = @"^(\s*)([a-zA-Z]+)(\s*)$";
+        private readonly Regex SENTENCE = new Regex(@"(^[a-z])|\.\s+(.)", RegexOptions.ExplicitCapture);
 
         private readonly IPhoneTypeDetector phoneTypeDetector;
         
@@ -26,6 +27,12 @@ namespace TranslateLib
                 else { return TranslateConsonantWord(word); }
             }
             throw new ArgumentException("Given string is not a single word!");
+        }
+
+        public string Translate(string input)
+        {
+            string translated = Regex.Replace(input, WORD_PATTERN, ReplaceMatch);
+            return CapitalizeSentence(translated);
         }
 
         private string TranslateVowelWord(string word)
@@ -53,6 +60,17 @@ namespace TranslateLib
                 index++;
             }
             throw new ArgumentOutOfRangeException("This word has no vowels!");
+        }
+
+        private string ReplaceMatch(Match m)
+        {
+            return TranslateWord(m.Value);
+        }
+
+        private string CapitalizeSentence(string input)
+        {
+            string lower = input.ToLower();
+            return SENTENCE.Replace(lower, s => s.Value.ToUpper());
         }
     }
 }
