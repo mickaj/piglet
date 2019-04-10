@@ -5,7 +5,7 @@ using System.Text;
 
 namespace TranslateLib
 {
-    public class DiacriticsRemover
+    public class DiacriticsRemover : IRemover
     {
         public string Remove(string input)
         {
