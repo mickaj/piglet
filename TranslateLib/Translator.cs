@@ -12,16 +12,23 @@ namespace TranslateLib
         private readonly Regex SENTENCE = new Regex(@"(^[a-z])|\.\s+(.)", RegexOptions.ExplicitCapture);
 
         private readonly IPhoneTypeDetector phoneTypeDetector;
+        private readonly IRemover remover;
         
         public Translator(IPhoneTypeDetector phoneTypeDetector)
         {
             this.phoneTypeDetector = phoneTypeDetector;
         }
 
+        public Translator(IPhoneTypeDetector phoneTypeDetector, IRemover remover)
+        {
+            this.phoneTypeDetector = phoneTypeDetector;
+            this.remover = remover;
+        }
+
         public string TranslateWord(string word)
         {
             word.Trim();
-            if (Regex.IsMatch(word, SINGLE_WORD_PATTERN))
+            if (Regex.IsMatch(RunRemover(word), SINGLE_WORD_PATTERN))
             {
                 if(phoneTypeDetector.Detect(word[0]) == PhoneType.Vowel) { return TranslateVowelWord(word); }
                 else { return TranslateConsonantWord(word); }
@@ -31,7 +38,7 @@ namespace TranslateLib
 
         public string Translate(string input)
         {
-            string translated = Regex.Replace(input, WORD_PATTERN, ReplaceMatch);
+            string translated = Regex.Replace(RunRemover(input), WORD_PATTERN, ReplaceMatch);
             return CapitalizeSentence(translated);
         }
 
@@ -71,6 +78,11 @@ namespace TranslateLib
         {
             string lower = input.ToLower();
             return SENTENCE.Replace(lower, s => s.Value.ToUpper());
+        }
+
+        private string RunRemover(string input)
+        {
+            return remover != null ? remover.Remove(input) : input;
         }
     }
 }
