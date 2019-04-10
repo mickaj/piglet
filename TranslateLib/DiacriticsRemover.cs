@@ -9,15 +9,20 @@ namespace TranslateLib
     {
         public string Remove(string input)
         {
-            string normalized = input.Normalize(NormalizationForm.FormD);
+            string normalized = input.Normalize(NormalizationForm.FormKD);
             StringBuilder sb = new StringBuilder();
 
             foreach(char c in normalized)
             {
-                UnicodeCategory unicideCategory = CharUnicodeInfo.GetUnicodeCategory(c);
-                if(unicideCategory != UnicodeCategory.NonSpacingMark)
+                UnicodeCategory unicodeCategory = CharUnicodeInfo.GetUnicodeCategory(c);
+                if(unicodeCategory != UnicodeCategory.NonSpacingMark)
                 {
-                    sb.Append(c);
+                    if(c == 'Ł') {sb.Append('L');}
+                    else
+                    {
+                        if(c == 'ł') { sb.Append('l'); }
+                        else { sb.Append(c); }
+                    }
                 }
             }
             return sb.ToString().Normalize(NormalizationForm.FormC);
