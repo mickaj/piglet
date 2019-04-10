@@ -5,7 +5,7 @@ namespace ConsoleUI
 {
     class Program
     {
-        static Translator translator = new Translator(new PhoneTypeDetector());
+        static Translator translator = new Translator(new PhoneTypeDetector(), new DiacriticsRemover());
         static void Main(string[] args)
         {
             Console.WriteLine("Input string: ");
