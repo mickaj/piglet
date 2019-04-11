@@ -88,7 +88,7 @@ namespace WebUI.Views.Shared {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Go to GitHub repo: &lt;a href=&quot;https://github.com/mickaj&quot; target=&quot;_blank&quot;&gt;github.com/mickaj&lt;/a&gt;.
+        ///   Looks up a localized string similar to Go to GitHub repo: &lt;a href=&quot;https://github.com/mickaj/piglet&quot; target=&quot;_blank&quot;&gt;github.com/mickaj/piglet&lt;/a&gt;.
         /// </summary>
         public static string aboutVisitGitHubRepo {
             get {

@@ -127,7 +127,7 @@
     <value>About PigLatin Translator</value>
   </data>
   <data name="aboutVisitGitHubRepo" xml:space="preserve">
-    <value>Go to GitHub repo: &lt;a href="https://github.com/mickaj" target="_blank"&gt;github.com/mickaj&lt;/a&gt;</value>
+    <value>Go to GitHub repo: &lt;a href="https://github.com/mickaj/piglet" target="_blank"&gt;github.com/mickaj/piglet&lt;/a&gt;</value>
   </data>
   <data name="aboutVisitMyGitHub" xml:space="preserve">
     <value>Visit my GitHub: &lt;a href="https://github.com/mickaj" target="_blank"&gt;github.com/mickaj&lt;/a&gt;</value>
