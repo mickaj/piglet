@@ -160,11 +160,119 @@ namespace WebUI.Views.Shared {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to car &gt; arcay.
+        /// </summary>
+        public static string howItWorksExampleConsonant1 {
+            get {
+                return ResourceManager.GetString("howItWorksExampleConsonant1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to fallout &gt; alloutfay.
+        /// </summary>
+        public static string howItWorksExampleConsonant2 {
+            get {
+                return ResourceManager.GetString("howItWorksExampleConsonant2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to translator &gt; anslatortray.
+        /// </summary>
+        public static string howItWorksExampleConsonant3 {
+            get {
+                return ResourceManager.GetString("howItWorksExampleConsonant3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Examples:.
+        /// </summary>
+        public static string howItWorksExamplesHeader {
+            get {
+                return ResourceManager.GetString("howItWorksExamplesHeader", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to apple &gt; appleyay.
+        /// </summary>
+        public static string howItWorksExampleVowel1 {
+            get {
+                return ResourceManager.GetString("howItWorksExampleVowel1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to edit &gt; edityay.
+        /// </summary>
+        public static string howItWorksExampleVowel2 {
+            get {
+                return ResourceManager.GetString("howItWorksExampleVowel2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to elaborate &gt; elaborateyay.
+        /// </summary>
+        public static string howItWorksExampleVowel3 {
+            get {
+                return ResourceManager.GetString("howItWorksExampleVowel3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to How it works:.
+        /// </summary>
+        public static string howItWorksHeader {
+            get {
+                return ResourceManager.GetString("howItWorksHeader", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &lt;b&gt;Consonant starting words:&lt;/b&gt; move consonants from the begging of the word to the end and add &quot;ay&quot;.&lt;br&gt;&lt;b&gt;Vowel starting words:&lt;/b&gt; add &quot;yay&quot; at the end of the word..
+        /// </summary>
+        public static string howItWorksPara {
+            get {
+                return ResourceManager.GetString("howItWorksPara", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to mickaj.
         /// </summary>
         public static string mickaj {
             get {
                 return ResourceManager.GetString("mickaj", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to source text.
+        /// </summary>
+        public static string sourceTextPlaceholder {
+            get {
+                return ResourceManager.GetString("sourceTextPlaceholder", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to target text.
+        /// </summary>
+        public static string targetTextPlaceholder {
+            get {
+                return ResourceManager.GetString("targetTextPlaceholder", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Translate!.
+        /// </summary>
+        public static string translateButton {
+            get {
+                return ResourceManager.GetString("translateButton", resourceCulture);
             }
         }
     }

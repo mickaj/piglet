@@ -41,3 +41,23 @@ img.githublink {
     width: 16px;
     vertical-align: middle;
 }
+
+textarea.translator-field {
+    height: 15em;
+    width: 100%;
+    resize: none;
+}
+
+div.main-container {
+    padding-top: 20px;
+}
+
+div.middle-div {
+    text-align: center;
+    padding-top: 50px;
+    margin-bottom: 20px;
+}
+
+button.translate-button {
+    text-align: center;
+}

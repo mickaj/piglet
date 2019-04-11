@@ -150,7 +150,43 @@
   <data name="home" xml:space="preserve">
     <value>Home</value>
   </data>
+  <data name="howItWorksExampleConsonant1" xml:space="preserve">
+    <value>car &gt; arcay</value>
+  </data>
+  <data name="howItWorksExampleConsonant2" xml:space="preserve">
+    <value>fallout &gt; alloutfay</value>
+  </data>
+  <data name="howItWorksExampleConsonant3" xml:space="preserve">
+    <value>translator &gt; anslatortray</value>
+  </data>
+  <data name="howItWorksExamplesHeader" xml:space="preserve">
+    <value>Examples:</value>
+  </data>
+  <data name="howItWorksExampleVowel1" xml:space="preserve">
+    <value>apple &gt; appleyay</value>
+  </data>
+  <data name="howItWorksExampleVowel2" xml:space="preserve">
+    <value>edit &gt; edityay</value>
+  </data>
+  <data name="howItWorksExampleVowel3" xml:space="preserve">
+    <value>elaborate &gt; elaborateyay</value>
+  </data>
+  <data name="howItWorksHeader" xml:space="preserve">
+    <value>How it works:</value>
+  </data>
+  <data name="howItWorksPara" xml:space="preserve">
+    <value>&lt;b&gt;Consonant starting words:&lt;/b&gt; move consonants from the begging of the word to the end and add "ay".&lt;br&gt;&lt;b&gt;Vowel starting words:&lt;/b&gt; add "yay" at the end of the word.</value>
+  </data>
   <data name="mickaj" xml:space="preserve">
     <value>mickaj</value>
+  </data>
+  <data name="translateButton" xml:space="preserve">
+    <value>Translate!</value>
+  </data>
+  <data name="sourceTextPlaceholder" xml:space="preserve">
+    <value>source text</value>
+  </data>
+  <data name="targetTextPlaceholder" xml:space="preserve">
+    <value>target text</value>
   </data>
 </root>

@@ -2,3 +2,30 @@
     ViewData["Title"] = TextFile.home;
 }
 
+<div class="container main-container">
+    <div class="row">
+        <div class="col-md-5">
+            <textarea class="translator-field" placeholder="@TextFile.sourceTextPlaceholder"></textarea>
+        </div>
+        <div class="col-md-2 middle-div">
+            <button class="btn btn-primary btn-lg translate-button">@TextFile.translateButton</button>
+        </div>
+        <div class="col-md-5">
+            <textarea class="translator-field" placeholder="@TextFile.targetTextPlaceholder"></textarea>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <h4>@TextFile.howItWorksHeader</h4>
+            <p>@Html.Raw(TextFile.howItWorksPara)</p>
+            <ul>
+                <li>@TextFile.howItWorksExampleVowel1</li>
+                <li>@TextFile.howItWorksExampleVowel2</li>
+                <li>@TextFile.howItWorksExampleVowel3</li>
+                <li>@TextFile.howItWorksExampleConsonant1</li>
+                <li>@TextFile.howItWorksExampleConsonant2</li>
+                <li>@TextFile.howItWorksExampleConsonant3</li>
+            </ul>
+        </div>
+    </div>
+</div>
