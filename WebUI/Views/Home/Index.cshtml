@@ -3,17 +3,23 @@
 }
 
 <div class="container main-container">
-    <div class="row">
-        <div class="col-md-5">
-            <textarea class="translator-field" placeholder="@TextFile.sourceTextPlaceholder"></textarea>
+    <form asp-action="Translate" asp-controller="Home"
+          data-ajax="true"
+          data-ajax-method="POST"
+          data-ajax-mode="replace"
+          data-ajax-update="#target-field">
+        <div class="row">
+            <div class="col-md-5">
+                <textarea class="translator-field" placeholder="@TextFile.sourceTextPlaceholder"></textarea>
+            </div>
+            <div class="col-md-2 middle-div">
+                <input type="submit" class="btn btn-primary btn-lg translate-button" value="@TextFile.translateButton">
+            </div>
+            <div class="col-md-5">
+                <textarea id="target-field" class="translator-field" placeholder="@TextFile.targetTextPlaceholder"></textarea>
+            </div>
         </div>
-        <div class="col-md-2 middle-div">
-            <button class="btn btn-primary btn-lg translate-button">@TextFile.translateButton</button>
-        </div>
-        <div class="col-md-5">
-            <textarea class="translator-field" placeholder="@TextFile.targetTextPlaceholder"></textarea>
-        </div>
-    </div>
+    </form>
     <div class="row">
         <div class="col-md-12">
             <h4>@TextFile.howItWorksHeader</h4>
