@@ -124,6 +124,61 @@ namespace WebUI.Views.Shared {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Accept.
+        /// </summary>
+        public static string cookiesAcceptButton {
+            get {
+                return ResourceManager.GetString("cookiesAcceptButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to This page uses cookies! To learn more please go to About section or click here -&gt;.
+        /// </summary>
+        public static string cookiesAlert {
+            get {
+                return ResourceManager.GetString("cookiesAlert", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Learn more.
+        /// </summary>
+        public static string cookiesLearnMore {
+            get {
+                return ResourceManager.GetString("cookiesLearnMore", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cookies policy.
+        /// </summary>
+        public static string cookiesPolicyHeader {
+            get {
+                return ResourceManager.GetString("cookiesPolicyHeader", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to This page uses cookies for two purposes: i) anti-forgery token when sending text to translate; ii) track if user dismissed cookie policy alert.&lt;/br&gt;
+        ///If you don&apos;t accept this policy please leave this page and delete cookies already created..
+        /// </summary>
+        public static string cookiesPolicyText {
+            get {
+                return ResourceManager.GetString("cookiesPolicyText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to An error occurred when translating :(.
+        /// </summary>
+        public static string errorTranslateMessage {
+            get {
+                return ResourceManager.GetString("errorTranslateMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to GitHub.
         /// </summary>
         public static string github {

@@ -9,6 +9,7 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using TranslateLib;
 
 namespace WebUI
 {
@@ -31,6 +32,9 @@ namespace WebUI
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
 
+            services.AddSingleton<IPhoneTypeDetector, PhoneTypeDetector>();
+            services.AddSingleton<IRemover, DiacriticsRemover>();
+            services.AddSingleton<ITranslator, Translator>();
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }

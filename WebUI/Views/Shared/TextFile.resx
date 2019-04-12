@@ -189,4 +189,23 @@
   <data name="targetTextPlaceholder" xml:space="preserve">
     <value>target text</value>
   </data>
+  <data name="errorTranslateMessage" xml:space="preserve">
+    <value>An error occurred when translating :(</value>
+  </data>
+  <data name="cookiesAcceptButton" xml:space="preserve">
+    <value>Accept</value>
+  </data>
+  <data name="cookiesAlert" xml:space="preserve">
+    <value>This page uses cookies! To learn more please go to About section or click here -&gt;</value>
+  </data>
+  <data name="cookiesLearnMore" xml:space="preserve">
+    <value>Learn more</value>
+  </data>
+  <data name="cookiesPolicyHeader" xml:space="preserve">
+    <value>Cookies policy</value>
+  </data>
+  <data name="cookiesPolicyText" xml:space="preserve">
+    <value>This page uses cookies for two purposes: i) anti-forgery token when sending text to translate; ii) track if user dismissed cookie policy alert.&lt;/br&gt;
+If you don't accept this policy please leave this page and delete cookies already created.</value>
+  </data>
 </root>

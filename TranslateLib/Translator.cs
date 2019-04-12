@@ -50,9 +50,13 @@ namespace TranslateLib
         private string TranslateConsonantWord(string word)
         {
             int length = GetFirstVowelIndex(word);
-            string movedPart = word.Substring(0, length);
-            string vowelPart = word.Substring(length);
-            return vowelPart + movedPart + "ay";
+            if(length > 0)
+            {
+                string movedPart = word.Substring(0, length);
+                string vowelPart = word.Substring(length);
+                return vowelPart + movedPart + "ay";
+            }
+            return word + "ay";
         }
 
         private int GetFirstVowelIndex(string word)
@@ -66,7 +70,7 @@ namespace TranslateLib
                 }
                 index++;
             }
-            throw new ArgumentOutOfRangeException("This word has no vowels!");
+            return -1;
         }
 
         private string ReplaceMatch(Match m)
