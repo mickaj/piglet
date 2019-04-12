@@ -5,7 +5,7 @@ using System.Text.RegularExpressions;
 
 namespace TranslateLib
 {
-    public class Translator
+    public class Translator : ITranslator
     {
         private const string WORD_PATTERN = "[a-zA-Z]+";
         private const string SINGLE_WORD_PATTERN = @"^(\s*)([a-zA-Z]+)(\s*)$";
