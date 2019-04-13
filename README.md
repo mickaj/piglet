@@ -1,6 +1,6 @@
 # PigLatin Translator 
 
-This questionable tool was created as an exercise in C# and .NET core.
+This "questionable" tool was created as an exercise in C# and .NET core.
 It is based on challange by Andrew Rosenwinkel published on edabit.com<br>
 Link: https://edabit.com/challenge/uhsik73PY7Y2XftzG
 
