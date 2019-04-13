@@ -38,13 +38,12 @@ namespace TranslateLib
 
         public string Translate(string input)
         {
-            string translated = Regex.Replace(RunRemover(input), WORD_PATTERN, ReplaceMatch);
-            return CapitalizeSentence(translated);
+            return Regex.Replace(RunRemover(input), WORD_PATTERN, ReplaceMatch);
         }
 
         private string TranslateVowelWord(string word)
         {
-            return word + "yay";
+            return CapitalizeIfHasUpperCase(word + "yay");
         }
 
         private string TranslateConsonantWord(string word)
@@ -54,9 +53,9 @@ namespace TranslateLib
             {
                 string movedPart = word.Substring(0, length);
                 string vowelPart = word.Substring(length);
-                return vowelPart + movedPart + "ay";
+                return CapitalizeIfHasUpperCase(vowelPart + movedPart + "ay");
             }
-            return word + "ay";
+            return CapitalizeIfHasUpperCase(word + "ay");
         }
 
         private int GetFirstVowelIndex(string word)
@@ -87,6 +86,29 @@ namespace TranslateLib
         private string RunRemover(string input)
         {
             return remover != null ? remover.Remove(input) : input;
+        }
+
+        private string CapitalizeIfHasUpperCase(string word)
+        {
+            bool hasUpperCase = false;
+            string result;
+            foreach(char c in word)
+            {
+                if(char.IsUpper(c))
+                {
+                    hasUpperCase = true;
+                    break;
+                }
+            }
+            if(hasUpperCase)
+            {
+                result = word.ToLower();
+                char firstChar = word[0];
+                char firstCharUpper = char.ToUpper(firstChar);
+                result = result.Substring(1);
+                return firstCharUpper + result;
+            }
+            return word;
         }
     }
 }
