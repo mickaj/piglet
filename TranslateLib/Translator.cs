@@ -9,7 +9,6 @@ namespace TranslateLib
     {
         private const string WORD_PATTERN = "[a-zA-Z]+";
         private const string SINGLE_WORD_PATTERN = @"^(\s*)([a-zA-Z]+)(\s*)$";
-        private readonly Regex SENTENCE = new Regex(@"(^[a-z])|\.\s+(.)", RegexOptions.ExplicitCapture);
 
         private readonly IPhoneTypeDetector phoneTypeDetector;
         private readonly IRemover remover;
@@ -77,12 +76,6 @@ namespace TranslateLib
             return TranslateWord(m.Value);
         }
 
-        private string CapitalizeSentence(string input)
-        {
-            string lower = input.ToLower();
-            return SENTENCE.Replace(lower, s => s.Value.ToUpper());
-        }
-
         private string RunRemover(string input)
         {
             return remover != null ? remover.Remove(input) : input;
@@ -90,25 +83,28 @@ namespace TranslateLib
 
         private string CapitalizeIfHasUpperCase(string word)
         {
-            bool hasUpperCase = false;
-            string result;
-            foreach(char c in word)
+            return HasUpperCase(word) ? CapitalizeWord(word) : word;
+         }
+
+        private bool HasUpperCase(string word)
+        {
+            foreach (char c in word)
             {
-                if(char.IsUpper(c))
+                if (char.IsUpper(c))
                 {
-                    hasUpperCase = true;
-                    break;
+                    return true;
                 }
             }
-            if(hasUpperCase)
-            {
-                result = word.ToLower();
-                char firstChar = word[0];
-                char firstCharUpper = char.ToUpper(firstChar);
-                result = result.Substring(1);
-                return firstCharUpper + result;
-            }
-            return word;
+            return false;
+        }
+
+        private string CapitalizeWord(string word)
+        {
+            string result = word.ToLower();
+            char firstChar = word[0];
+            char firstCharUpper = char.ToUpper(firstChar);
+            result = result.Substring(1);
+            return firstCharUpper + result;
         }
     }
 }
