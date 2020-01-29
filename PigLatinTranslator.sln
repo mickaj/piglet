@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.489
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29709.97
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleUI", "ConsoleUI\ConsoleUI.csproj", "{8D696FF1-8D82-4258-B781-01FEDEC32FCC}"
 EndProject
@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TranslateLib", "TranslateLi
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TranslateLib.Tests", "TranslateLib.Tests\TranslateLib.Tests.csproj", "{E41D4C08-0B0C-47A7-8E62-842AAB6CCB33}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebUI", "WebUI\WebUI.csproj", "{DD89B753-BF23-4BBE-9177-63162A866CEB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebUI", "WebUI\WebUI.csproj", "{DD89B753-BF23-4BBE-9177-63162A866CEB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAPI", "WebAPI\WebAPI.csproj", "{95BC6441-6B28-4B0A-B440-295FB946CBD2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{DD89B753-BF23-4BBE-9177-63162A866CEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DD89B753-BF23-4BBE-9177-63162A866CEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DD89B753-BF23-4BBE-9177-63162A866CEB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95BC6441-6B28-4B0A-B440-295FB946CBD2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95BC6441-6B28-4B0A-B440-295FB946CBD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95BC6441-6B28-4B0A-B440-295FB946CBD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95BC6441-6B28-4B0A-B440-295FB946CBD2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
